@@ -1,66 +1,75 @@
 <!doctype html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
-    </head>
-    <body>
-        <div class="corner-circle red"></div>
-        <div class="corner-circle green"></div>
-        <div class="corner-circle blue"></div>
-        <div class="corner-circle yellow"></div>
-        <div class="center-image">
-            <img src="tarcza.jpg" alt="Tarcza" />
-        </div>
-        <style>
-            body {
-                background: #fff;
-                margin: 8;
-                min-height: 100vh;
-                min-width: 100vw;
-                position: relative;
-                overflow: hidden;
-            }
-            .corner-circle {
-                width: 80px;
-                height: 80px;
-                border-radius: 50%;
-                position: fixed;
-                z-index: 10;
-            }
-            .red {
-                background: red;
-                top: 40px;
-                left: 40px;
-            }
-            .green {
-                background: green;
-                top: 40px;
-                right: 40px;
-            }
-            .blue {
-                background: blue;
-                bottom: 40px;
-                left: 40px;
-            }
-            .yellow {
-                background: yellow;
-                bottom: 40px;
-                right: 40px;
-            }
-            .center-image {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                z-index: 1;
-            }
-            .center-image img {
-                display: block;
-                max-width: 90vw;
-                max-height: 90vh;
-            }
-        </style>
-    </body>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <div class="corner-circle red"></div>
+    <div class="corner-circle green"></div>
+    <div class="corner-circle blue"></div>
+    <div class="corner-circle yellow"></div> -->
+    <div class="center-image">
+      <img src="tarcza.jpg" alt="Tarcza" />
+    </div>
+    <style>
+      html {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        width: 100vw;
+        box-sizing: border-box;
+        border: 30px solid #f00;
+      }
+      body {
+        background: #fff;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+      }
+      .corner-circle {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        position: fixed;
+        z-index: 10;
+      }
+      .red {
+        background: red;
+        top: 40px;
+        left: 40px;
+      }
+      .green {
+        background: green;
+        top: 40px;
+        right: 40px;
+      }
+      .blue {
+        background: blue;
+        bottom: 40px;
+        left: 40px;
+      }
+      .yellow {
+        background: yellow;
+        bottom: 40px;
+        right: 40px;
+      }
+      .center-image {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+      }
+      .center-image img {
+        display: block;
+        max-width: 90vw;
+        max-height: 90vh;
+      }
+    </style>
+  </body>
 </html>
